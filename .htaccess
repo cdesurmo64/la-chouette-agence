@@ -1,0 +1,11 @@
+# BEGIN Activates GZIP compression
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+# END Activates GZIP compression
+
+# BEGIN Adds old browsers compatibility
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+# END Adds old browsers compatibility
