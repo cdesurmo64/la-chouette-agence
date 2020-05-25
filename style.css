@@ -711,7 +711,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
 }
 
@@ -726,6 +726,17 @@ h3 {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
+}
+
+blockquote.opinion p {
+    font-size: 1.6em;
+    font-style: oblique;
+    margin-bottom: 0.2em;
+}
+
+blockquote.opinion footer {
+    font-size: 1.2em;
+    color: #575757;
 }
 
 h1 {
