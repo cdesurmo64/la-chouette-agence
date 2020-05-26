@@ -139,7 +139,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(217, 217, 217, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -715,6 +715,10 @@ h2 {
     line-height: 1.4em;
 }
 
+h2.contact {
+    position: relative;
+}
+
 h3 {
     font-size: 15px;
     text-transform: uppercase;
@@ -728,10 +732,21 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
+blockquote {
+    font-size: 14px;
+    margin: 0 0;
+    padding: 0 24px;
+    border-left: none;
+}
+
 blockquote.opinion p {
     font-size: 1.6em;
     font-style: oblique;
-    margin-bottom: 0.2em;
+    margin-bottom: 4px;
+}
+
+blockquote footer::before {
+    content: '';
 }
 
 blockquote.opinion footer {
@@ -770,7 +785,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(19, 17, 14, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -788,20 +803,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #97380C;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #97380C;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #834A2F!important;
     color: #FFFFFF!important;
 }
 
@@ -814,11 +829,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #97380C!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #834A2F!important;
 }
 
 .icon-dark-slate-blue {
