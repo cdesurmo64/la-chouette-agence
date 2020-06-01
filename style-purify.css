@@ -535,8 +535,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a {
   margin-bottom: 30px;
 }
 
+#bloc-7 .form-group.error .form-control {
+  border: 2px solid indianred;
+}
+
+#bloc-7 .form-group.error .help-block {
+  color: indianred;
+  font-size: 1.2em;
+}
+
 #bloc-7 label {
   font-size: 1.2em;
+}
+
+#bloc-7 .alert-success {
+  color: black;
 }
 
 .container {

@@ -32,7 +32,8 @@
         <link rel="stylesheet" type="text/css" href="./css/et-line-purify.min.css">
         <!--	<link rel="stylesheet" type="text/css" href="./css/et-line-purify.css">-->
 		<link rel="stylesheet" type="text/css" href="style-purify.min.css">
-		<!--	<link rel="stylesheet" type="text/css" href="style-purify.css">-->
+<!--        <link rel="stylesheet" type="text/css" href="style.css">-->
+<!--        <link rel="stylesheet" type="text/css" href="style-purify.css">-->
 
 
         <!-- Analytics -->
@@ -93,29 +94,29 @@
                     <div class="container bloc-lg">
                         <div class="row">
                             <div class="col-sm-offset-2 col-sm-8">
-                                <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                                <form id="contact-form" novalidate success-msg="Votre message nous a bien été envoyé, merci :)" fail-msg="Nous sommes désolés, il semblerait qu'il y ait un souci avec le serveur d'envoi d'email, veuillez réessayer plus tard">
                                     <div class="form-group">
-                                        <label>
+                                        <label for="name">
                                             Nom :
                                         </label>
-                                        <input id="name" class="form-control" required/>
+                                        <input id="name" class="form-control" required data-validation-required-message="Veuillez remplir ce champ"/>
                                     </div>
                                     <div class="form-group">
-                                        <label>
+                                        <label for="email">
                                             Adresse email :
                                         </label>
-                                        <input id="email" class="form-control" type="email" required/>
+                                        <input id="email" class="form-control" type="email" required data-validation-required-message="Veuillez remplir ce champ"/>
                                     </div>
                                     <div class="form-group">
-                                        <label>
-                                            Comment nous avez-vous connu ?
+                                        <label for="known_us">
+                                            Comment nous avez-vous connus ?
                                         </label>
-                                        <input class="form-control" type="email" required id="input_504"/>
+                                        <input id="known_us" class="form-control" required data-validation-required-message="Veuillez remplir ce champ"/>
                                     </div>
                                     <div class="form-group">
-                                        <label>
+                                        <label for="message">
                                             Brief de votre projet (Ajoutez autant de détails que nécessaire) :<br>
-                                        </label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                                        </label><textarea id="message" class="form-control" rows="4" cols="50" required data-validation-required-message="Veuillez remplir ce champ"></textarea>
                                     </div>
                                     <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
                                         Envoyer
