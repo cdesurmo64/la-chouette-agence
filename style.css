@@ -289,8 +289,12 @@ a:hover {
     padding-left: 0;
 }
 
+.row.social {
+    margin-top: 30px;
+}
+
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 2.3em;
 }
 
 .navbar {
@@ -331,7 +335,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.4em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -512,7 +516,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: #555;
     box-shadow: none;
 }
 
@@ -529,6 +533,16 @@ button {
 
 .scrollToTop span {
     margin-top: 6px;
+    color: black;
+}
+
+.scrollToTop {
+    background: lightgrey;
+    border-color: black;
+}
+
+.scrollToTop:hover {
+    background: white;
 }
 
 .showScrollTop {
@@ -579,7 +593,7 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
-    margin: 0 auto;
+    margin: 0 auto 15px;
 }
 
 .lightbox-caption {
@@ -599,7 +613,7 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0);
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
@@ -616,8 +630,8 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, .9)!important;
+    background: rgba(0, 0, 0);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -643,6 +657,7 @@ a[data-lightbox]:hover img {
     padding: 0;
     color: rgba(0, 0, 0, .5);
     background: none;
+    text-align: center;
 }
 
 h1,
@@ -658,6 +673,14 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+#bloc-7 .form-group {
+    margin-bottom: 30px;
+}
+
+#bloc-7 label {
+    font-size: 1.2em;
 }
 
 .container {
@@ -683,7 +706,16 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.15em;
+}
+
+p.contact-description {
+    margin-top: 30px;
+}
+
+p.contact-info {
+    text-align: center;
+    margin-top: 40px;
 }
 
 .tight-width-whitespace {
@@ -711,7 +743,7 @@ p {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.7em;
     line-height: 1.4em;
 }
 
@@ -719,8 +751,12 @@ h2.contact {
     position: relative;
 }
 
+h2.description {
+    margin-bottom: 20px;
+}
+
 h3 {
-    font-size: 15px;
+    font-size: 1.22em;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -974,6 +1010,11 @@ h4 {
         -webkit-transform: none;
         -ms-transform: none;
     }
+
+    #bloc-0 .nav > li > a {
+        color: black!important;
+    }
+
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -982,6 +1023,7 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
+
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
@@ -1076,6 +1118,31 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+
+    .opinion {
+        margin-top: 30px;
+    }
+
+    #bloc-4-portfolio h2 {
+        margin-bottom: 50px;
+    }
+
+    #bloc-4-portfolio h3 {
+        margin-top: 30px;
+    }
+
+    #bloc-4-portfolio article {
+            margin-bottom: 40px;
+    }
+
+    .img-responsive {
+        margin: auto;
+    }
+
+    .portfolio-row {
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }
 
