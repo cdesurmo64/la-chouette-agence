@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.c-line.dev/projets/la-chouette-agence/sitemap.xml
