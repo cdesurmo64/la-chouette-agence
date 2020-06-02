@@ -9,7 +9,6 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
     outline: none!important;
 }
 
@@ -25,6 +24,51 @@ a:hover {
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+}
+
+a:focus {
+    outline: 2px dashed #CC8500 !important;
+}
+
+.btn:focus {
+    outline: 3px dashed #fff !important;
+    outline-offset: 3px;
+}
+
+
+.bold-link:focus {
+    outline-offset: 3px;
+    outline-color: #FFB429!important;
+}
+
+#bloc-4-portfolio a:focus {
+    outline: 3px dashed #CC8500 !important;
+    outline-offset: 4px;
+}
+
+.scrollToTop:focus {
+    outline-color: #CC8500 !important;
+    background-color: #f9eca3!important;
+}
+.social:focus {
+    outline: 2px dashed #fff !important;
+    outline-offset: 3px;
+}
+
+#bloc-7 .form-control:focus {
+    box-shadow: 0 1px 10px 1px #337ab76e, 0 0 8px rgba(102,175,233,.6);
+}
+
+#bloc-7 .btn:focus {
+    outline: 3px dashed #CC8500 !important;
+    outline-offset: 4px;
+}
+
+
+.close-lightbox:focus, .prev-lightbox:focus, .next-lightbox:focus {
+    outline: 3px dashed #CC8500 !important;
+    outline-offset: 4px;
+    opacity: 0.7;
 }
 
 .bloc {
@@ -464,8 +508,7 @@ nav .caret {
 }
 
 .btn-d,
-.btn-d:hover,
-.btn-d:focus {
+.btn-d:hover {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
 }
@@ -532,7 +575,6 @@ button {
 }
 
 .scrollToTop span {
-    margin-top: 6px;
     color: black;
 }
 
@@ -617,7 +659,7 @@ a[data-lightbox]:hover img {
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .close-lightbox:hover,
