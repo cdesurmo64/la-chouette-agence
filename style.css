@@ -9,7 +9,7 @@ body {
 
 a,
 button {
-    outline: none!important;
+    outline: none;
 }
 
 a:hover {
@@ -27,31 +27,36 @@ a:hover {
 }
 
 a:focus {
-    outline: 2px dashed #CC8500 !important;
+    outline: 2px dashed #CC8500;
+}
+
+.contact-info a:focus {
+    outline-offset: 3px;
 }
 
 .btn:focus {
-    outline: 3px dashed #fff !important;
+    outline: 3px dashed #fff;
     outline-offset: 3px;
+    color: #fff;
 }
 
 
 .bold-link:focus {
     outline-offset: 3px;
-    outline-color: #FFB429!important;
+    outline-color: #FFB429;
 }
 
 #bloc-4-portfolio a:focus {
-    outline: 3px dashed #CC8500 !important;
+    outline: 3px dashed #CC8500;
     outline-offset: 4px;
 }
 
 .scrollToTop:focus {
-    outline-color: #CC8500 !important;
-    background-color: #f9eca3!important;
+    outline-color: #CC8500;
+    background-color: #f9eca3;
 }
 .social:focus {
-    outline: 2px dashed #fff !important;
+    outline: 2px dashed #fff;
     outline-offset: 3px;
 }
 
@@ -60,15 +65,16 @@ a:focus {
 }
 
 #bloc-7 .btn:focus {
-    outline: 3px dashed #CC8500 !important;
+    outline: 3px dashed #CC8500;
     outline-offset: 4px;
 }
 
 
 .close-lightbox:focus, .prev-lightbox:focus, .next-lightbox:focus {
-    outline: 3px dashed #CC8500 !important;
+    outline: 3px dashed #CC8500;
     outline-offset: 4px;
     opacity: 0.7;
+    color: white;
 }
 
 .bloc {
@@ -110,10 +116,10 @@ a:focus {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 
 .bg-repeat {
@@ -397,7 +403,7 @@ a:focus {
 }
 
 .navbar-toggle:hover {
-    background: transparent!important;
+    background: transparent;
 }
 
 .navbar-toggle .icon-bar {
@@ -458,7 +464,7 @@ a:focus {
 }
 
 .nav > li > .dropdown a {
-    background: none!important;
+    background: none;
     display: block;
     padding: 14px 15px;
 }
@@ -485,7 +491,7 @@ nav .caret {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
+    margin: 6px -5px 0 0;
     float: right;
 }
 
@@ -514,7 +520,7 @@ nav .caret {
 }
 
 button {
-    outline: none!important;
+    outline: none;
 }
 
 .btn-rd {
@@ -529,11 +535,11 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 30px;
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 60px;
 }
 
 .sm-shadow {
@@ -670,7 +676,7 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9)!important;
+    color: rgba(255, 255, 255, .9);
     background: rgba(0, 0, 0);
     transition: all .2s ease-in-out;
     position: absolute;
@@ -695,7 +701,7 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, .5);
+    color: #575757;
     background: none;
     text-align: center;
 }
@@ -712,7 +718,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 #bloc-7 .form-group {
@@ -723,9 +729,15 @@ a {
     border: 2px solid indianred;
 }
 
-#bloc-7 .form-group.error .help-block {
-    color: indianred;
+#bloc-7 .form-group.error .help-block .alert-warning{
+    color: indianred ;
     font-size: 1.2em;
+    background-color: white;
+    border-color: white;
+}
+
+#bloc-7 .form-group.error .help-block .alert-warning li {
+    list-style: disc;
 }
 
 #bloc-7 label {
@@ -772,6 +784,10 @@ p.contact-info {
     margin-top: 40px;
 }
 
+.contact-info a {
+    color: #575757!important;
+}
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -784,7 +800,7 @@ p.contact-info {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -813,7 +829,7 @@ h3 {
     font-size: 1.22em;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -845,11 +861,11 @@ blockquote.opinion footer {
 }
 
 h1 {
-    color: #333333!important;
+    color: #333333;
 }
 
 h4 {
-    color: #333333!important;
+    color: #333333;
 }
 
 .icons {
@@ -858,7 +874,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -881,7 +897,7 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
 .bgc-white {
@@ -897,21 +913,21 @@ h4 {
 }
 
 .tc-white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .btn-atomic-tangerine {
     background: #97380C;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #834A2F!important;
+    background: #834A2F;
     color: #FFFFFF!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #FFFFFF !important;
 }
 
 .ltc-white:hover {
@@ -919,16 +935,16 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #97380C!important;
+    color: #97380C;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #834A2F!important;
+    color: #834A2F;
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #364577;
+    border-color: #364577;
 }
 
 .no-webp .bg-dots-bg {
@@ -950,20 +966,48 @@ h4 {
 
 
 .no-webp .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere-mobile.jpg");
 }
 
 .webp .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url("img/la-chouette-agence-banniere-mobile.webp");
 }
 
 
 .no-webp .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation-mobile.jpg");
 }
 
 .webp .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation-mobile.webp");
+}
+
+.bg-banniere, .bg-presentation {
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .no-webp .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere.jpg");
+    }
+
+    .webp .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere.webp");
+    }
+
+
+    .no-webp .bg-presentation {
+        background-image: url("img/image-de-presentation.jpg");
+    }
+
+    .webp .bg-presentation {
+        background-image: url("img/image-de-presentation.webp");
+    }
+
+    .bg-banniere, .bg-presentation {
+        background-size: auto;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -989,18 +1033,6 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -1013,10 +1045,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1025,8 +1053,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1043,8 +1069,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1052,7 +1078,7 @@ h4 {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
+        float: none;
     }
     .navbar.row {
         margin-left: 0;
@@ -1066,7 +1092,7 @@ h4 {
     }
 
     #bloc-0 .nav > li > a {
-        color: black!important;
+        color: black;
     }
 
     .nav > li {
@@ -1083,7 +1109,7 @@ h4 {
     }
     .dropdown .dropdown a .caret {
         float: none;
-        margin: 5px 0 0 10px!important;
+        margin: 5px 0 0 10px;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;

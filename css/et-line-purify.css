@@ -9,7 +9,7 @@
 
 .et-icon-browser,.et-icon-document,.et-icon-dribbble,.et-icon-edit,.et-icon-expand,.et-icon-facebook,.et-icon-focus,.et-icon-global,.et-icon-key,.et-icon-layers,.et-icon-lock,.et-icon-map,.et-icon-picture,.et-icon-presentation,.et-icon-refresh,.et-icon-search,.et-icon-target,.et-icon-twitter,.et-icon-video {
   font-family: et-line;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;

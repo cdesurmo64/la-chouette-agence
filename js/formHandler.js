@@ -42,7 +42,7 @@ $(function()
 		 			{  
 						if($form.is('[data-success-msg]')) // Show Success Message
 						{
-							$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.data('success-msg')+"</strong></div></div>");
+							$form.append("<div role='alert' id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.data('success-msg')+"</strong></div></div>");
 						}
 						else // Re-Direct
 						{

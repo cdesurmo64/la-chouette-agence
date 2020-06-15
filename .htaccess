@@ -1,16 +1,12 @@
 # BEGIN Redirect
 <IfModule mod_rewrite.c>
 RewriteEngine On
-
-# BEGIN Redirect from non-www. to www.
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/projets/la-chouette-agence/$1 [R=301,L]
-# END Redirect from non-www. to www.
-
-# BEGIN Redirect from HTTP to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-# BEGIN Redirect from HTTP to HTTPS
+RewriteBase /projets/la-chouette-agence/
+# BEGIN Redirect from HTTP to HTTPS and from non-www. to www.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# END Redirect from HTTP to HTTPS and from non-www. to www.
 </IfModule>
 # END Redirect
 
